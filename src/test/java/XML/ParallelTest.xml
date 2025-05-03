@@ -1,19 +1,19 @@
-<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<?xml version="1.0" encoding="UTF-8"?>
 
-<!--<suite name="mySuit" parallel="tests" thread-count="2">-->
-<!--    <test name="test1">-->
-<!--        <parameter name="BrowserTipi" value="edge"></parameter>-->
+<suite name="mySuit" parallel="tests" thread-count="2">
+    <test name="test1">
+        <parameter name="BrowserTipi" value="edge"></parameter>
 
-<!--        <classes>-->
+        <classes>
 <!--            <class name="Runners._08_TestRunnerParallel"></class>-->
-<!--        </classes>-->
-<!--    </test>-->
+        </classes>
+    </test>
 
-<!--    <test name="test2">-->
-<!--        <parameter name="BrowserTipi" value="firefox"></parameter>-->
+    <test name="test2">
+        <parameter name="BrowserTipi" value="firefox"></parameter>
 
-<!--        <classes>-->
+        <classes>
 <!--            <class name="Runners._08_TestRunnerParallel"></class>-->
-<!--        </classes>-->
-<!--    </test>-->
-<!--</suite>-->
+        </classes>
+    </test>
+</suite>
