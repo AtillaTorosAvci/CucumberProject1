@@ -10,6 +10,53 @@ public class Elements extends ParentPage{
         PageFactory.initElements(GWD.getDriver(),this);
     }
 
+    @FindBy(css="[href='transfer.htm']")
+    public WebElement transferFunds;
+
+    @FindBy(css="[id='fromAccountId']")
+    public WebElement fromAccount;
+
+    @FindBy(css="[id='toAccountId']")
+    public WebElement toAccount;
+
+    @FindBy(css="[id='amount']")
+    public WebElement amount;
+
+    @FindBy(css="[value='Transfer']")
+    public WebElement transfer;
+
+    @FindBy(css="[id='showResult']>:nth-child(2)")
+    public WebElement showResult;
+
+    @FindBy(css="[href='overview.htm']")
+    public WebElement accountsOverview;
+
+    @FindBy(css="[id='accountTable']>:nth-child(2)>:nth-child(1)>:nth-child(1)>:nth-child(1)")
+    public WebElement accountNumber;
+
+    @FindBy(css="[id='rightPanel'] table")
+    public WebElement transactionDetails;
+
+    @FindBy(css="[href='findtrans.htm']")
+    public WebElement findTransactions;
+
+    @FindBy(css="[id='transactionId']")
+    public WebElement transactionID;
+
+    @FindBy(css="[id='findById']")
+    public WebElement findTransaction;
+
+    @FindBy(css="[id='transactionTable']>:nth-child(2)>:nth-child(2)>:nth-child(2)>:nth-child(1)")
+    public WebElement fundTransferReceived;
+
+    @FindBy(css="[id='rightPanel'] >:nth-child(2)>:nth-child(1)>:nth-child(1)>:nth-child(2)")
+    public WebElement transactionIDnumber;
+
+    @FindBy(css="[id='rightPanel']>:nth-child(2)>:nth-child(1)>:nth-child(5)>:nth-child(2)")
+    public WebElement idAmount;
+
+
+/// ///////////////////////////////////////////////
 
     @FindBy(linkText="Register")
     public WebElement register;
