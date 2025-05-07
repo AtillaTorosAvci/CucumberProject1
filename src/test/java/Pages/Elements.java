@@ -99,4 +99,22 @@ public class Elements extends ParentPage{
 
     @FindBy(xpath="//*[@class='title']")
     public WebElement headText;
+
+    @FindBy(xpath="//div[@id='leftPanel']//li[1]")
+    public WebElement OpenNewAccount;
+
+    @FindBy(xpath="//div[@id='openAccountForm']//select[1]/option[1]")
+    public WebElement CheckingOpt;
+
+    @FindBy(xpath="//div[@id='openAccountForm']//select[1]/option[2]")
+    public WebElement SavingOpt;
+
+    @FindBy(xpath="//div[@id='openAccountForm']//select[2]/option[1]")
+    public WebElement AccountSelect;
+
+    @FindBy(xpath="//input[@value='Open New Account']")
+    public WebElement ConfirmOpenNewAccount;
+
+    @FindBy(xpath="//div[@id='openAccountResult']//h1")
+    public WebElement CongMessage;
 }
