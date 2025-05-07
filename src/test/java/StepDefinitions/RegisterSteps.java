@@ -15,7 +15,7 @@ import java.util.Random;
 public class RegisterSteps {
 
     Elements el = new Elements();
-    int rnd = (int)(Math.random() * 100);
+    int rnd = (int)(Math.random() * 10000);
 
     @Given("Navigate to ParaBank")
     public void navigateToParaBank() { GWD.getDriver().get("https://parabank.parasoft.com/parabank/index.htm");}
@@ -36,8 +36,6 @@ public class RegisterSteps {
         el.mySendKeys(el.userName, "john"+rnd);
         el.mySendKeys(el.password, "john12345");
         el.mySendKeys(el.confirmPassword, "john12345");
-
-
 
 
     }

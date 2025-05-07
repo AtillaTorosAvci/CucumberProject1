@@ -55,6 +55,45 @@ public class Elements extends ParentPage{
     @FindBy(css="[id='rightPanel']>:nth-child(2)>:nth-child(1)>:nth-child(5)>:nth-child(2)")
     public WebElement idAmount;
 
+    @FindBy(css = "[id='leftPanel'] :nth-child(7)")
+    public WebElement requestLoanBTN;
+
+    @FindBy(id = "amount")
+    public WebElement loanAmount;
+
+    @FindBy(id = "downPayment")
+    public WebElement downPayment;
+
+    @FindBy(id = "fromAccountId")
+    public WebElement fromAccountId;
+
+    @FindBy(css = "[value='Apply Now']")
+    public WebElement applyNowBTN;
+
+    @FindBy(id = "loanProviderName")
+    public WebElement loanProviderName;
+
+    @FindBy(id = "loanStatus")
+    public WebElement loanStatus;
+
+    @FindBy(id = "loanRequestApproved")
+    public WebElement loanRequestMSG;
+
+    @FindBy(id = "newAccountId")
+    public WebElement newAccountId;
+
+    @FindBy(id = "accountType")
+    public WebElement accountType;
+
+    @FindBy(id = "balance")
+    public WebElement balance;
+
+    @FindBy(id = "availableBalance")
+    public WebElement availableBalance;
+
+    @FindBy(id = "noTransactions")
+    public WebElement noTransactions;
+
 
 /// ///////////////////////////////////////////////
 
