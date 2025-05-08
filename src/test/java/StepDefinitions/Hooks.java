@@ -18,7 +18,6 @@ public class Hooks {
             byte[] hafizadakiHali=ts.getScreenshotAs(OutputType.BYTES);
             senaryo.attach(hafizadakiHali, "image/png", "screenshot name");
         }
-
         GWD.quitDriver();
     }
 
