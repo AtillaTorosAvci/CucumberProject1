@@ -6,7 +6,7 @@ Feature:  Request Loan (Credit)
     And   Clicks the "Register" button
 
 
-    @Loan, @Accounts, @Regression
+  @Loan, @Accounts, @Regression
   Scenario: User applies for a loan and verifies account details
 
     Given The user clicks the Request Loan link on the ParaBank homepage
@@ -20,8 +20,8 @@ Feature:  Request Loan (Credit)
     When The user clicks the Apply Now button
 
     Then The user verifies the following under the Loan Request Processed heading:
-      | ParaBank |
-      | Approved |
+      | Jiffy Mortgage Solutions (JMS) |
+      | Approved                       |
 
     And The user verifies the message
       | Congratulations, your loan has been approved. |
@@ -31,7 +31,7 @@ Feature:  Request Loan (Credit)
     Then The user verifies the following under the Account Details heading:
       | Loan |
       | 2000 |
-      | 400  |
+      | 2000  |
 
     And The user verifies the message No Transactions Found under the Account Activity heading
 
@@ -49,8 +49,8 @@ Feature:  Request Loan (Credit)
     When The user clicks the Apply Now button
 
     Then The user verifies the following under the Loan Request Processed heading:
-      | ParaBank |
-      | Denied   |
+      | Jiffy Mortgage Solutions (JMS) |
+      | Denied                         |
 
     And The user verifies the message
       | You do not have sufficient funds for the given down payment. |
