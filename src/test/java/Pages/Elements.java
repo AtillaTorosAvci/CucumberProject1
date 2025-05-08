@@ -10,6 +10,18 @@ public class Elements extends ParentPage{
         PageFactory.initElements(GWD.getDriver(),this);
     }
 
+    @FindBy(xpath = "//*[@name='username']")
+    public WebElement username;
+
+    @FindBy(xpath = "//*[@name='password']")
+    public WebElement password;
+
+    @FindBy(xpath = "//*[@value='Log In']")
+    public WebElement loginbutton;
+
+    @FindBy(xpath = "//*[@id='rightPanel']/h1")
+    public WebElement loginErrorMessage;
+
     @FindBy(css="[href='transfer.htm']")
     public WebElement transferFunds;
 
