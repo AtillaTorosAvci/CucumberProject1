@@ -57,7 +57,7 @@ public class TC_607_RequestLoanSteps extends GWD {
     public void theUserVerifiesTheMessage(DataTable control) {
         List<String> controlDatas = control.asList();
 
-        if (elements.loanRequestMSG.getText().toLowerCase().contains("approved")) {
+        if (controlDatas.get(0).toLowerCase().contains("approved")) {
             elements.wait.until(ExpectedConditions.visibilityOf(elements.loanRequestMSG));
             Assert.assertTrue(elements.loanRequestMSG.getText().toLowerCase().contains(controlDatas.get(0).toLowerCase()), "Loan Status Is Wrong");
         } else {
