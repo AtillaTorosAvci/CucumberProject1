@@ -94,9 +94,6 @@ public class Elements extends ParentPage{
     @FindBy(id = "noTransactions")
     public WebElement noTransactions;
 
-
-/// ///////////////////////////////////////////////
-
     @FindBy(linkText="Register")
     public WebElement register;
 
@@ -156,4 +153,41 @@ public class Elements extends ParentPage{
 
     @FindBy(xpath="//div[@id='openAccountResult']//h1")
     public WebElement CongMessage;
+ 
+    @FindBy(linkText = "Bill Pay")
+    public WebElement billPayBtn;
+
+    @FindBy(name = "payee.name")
+    public WebElement payeeName;
+
+    @FindBy(xpath = "//input[@value='Send Payment']")
+    public WebElement sendPaymentBtn;
+
+    @FindBy(id="billpayResult")
+    public WebElement completeText;
+
+    @FindBy(linkText="Update Contact Info")
+    public WebElement updateContactBtn;
+
+    @FindBy(css="input[value='Update Profile']")
+    public WebElement updateProfileBtn;
+
+    @FindBy(id="updateProfileResult")
+    public WebElement updateProfileText;
+
+    public WebElement getOmerElement(String strElement)
+    {
+        switch (strElement)
+        {
+            case "billPayBtn" : return this.billPayBtn;
+            case "payeeName" : return this.payeeName;
+            case "sendPaymentBtn" : return this.sendPaymentBtn;
+            case "updateContactBtn" : return this.updateContactBtn;
+            case "updateProfileBtn" : return this.updateProfileBtn;
+        }
+
+        return null;
+    }
+    
+
 }
