@@ -26,7 +26,6 @@ public class GWD {
         if (threadBrowserName.get() == null) // XML den çalışmayacak diğer testlerde tarayıcı boş geldiğinde
             threadBrowserName.set("chrome");  // tarayıcı adı CHROME olarak default olsun
 
-        System.out.println(threadBrowserName.get());
 
         if (threadDriver.get() == null) { //1 kez oluştur
 
@@ -44,7 +43,6 @@ public class GWD {
 
         threadDriver.get().manage().window().maximize();  // bu hattaki driverı max et
         threadDriver.get().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
-
 
         return threadDriver.get();
     }
@@ -65,6 +63,7 @@ public class GWD {
             driver=null;                         // değişkene NULL değerini ata
             threadDriver.set(driver);            // thread e bu değişkeni set et
         }
+        logger.info("Test Bitti.");
     }
 
 

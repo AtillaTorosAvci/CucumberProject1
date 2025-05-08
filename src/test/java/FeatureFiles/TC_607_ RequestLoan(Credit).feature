@@ -6,7 +6,7 @@ Feature:  Request Loan (Credit)
     And   Clicks the "Register" button
 
 
-  @Loan, @Accounts, @Regression
+  @Loan @Accounts @Regression
   Scenario: User applies for a loan and verifies account details
 
     Given The user clicks the Request Loan link on the ParaBank homepage
@@ -20,6 +20,8 @@ Feature:  Request Loan (Credit)
     When The user clicks the Apply Now button
 
     Then The user verifies the following under the Loan Request Processed heading:
+#     https://parabank.parasoft.com/parabank/index.htm
+#     Test sitesindeki Kredi sağlayıcı Data'sı sürekli değiştiği için bu kısım güncellenmeli.
       | Jiffy Mortgage Solutions (JMS) |
       | Approved                       |
 
@@ -35,7 +37,7 @@ Feature:  Request Loan (Credit)
 
     And The user verifies the message No Transactions Found under the Account Activity heading
 
-  @Loan, @Accounts, @Regression
+  @Loan @Accounts @Regression
   Scenario: User applies for a loan and verifies account details (Negative)
 
     Given The user clicks the Request Loan link on the ParaBank homepage

@@ -10,14 +10,11 @@ import org.testng.Assert;
 
 import java.util.List;
 
-public class TC_602_LoginSteps {
+public class TC_602_LoginSteps extends GWD{
     Elements elements = new Elements();
 
 
-    @Given("Navigate to website")
-    public void navigateToWebsite() {
-        GWD.getDriver().get("https://parabank.parasoft.com/");
-    }
+
 
     @When("Enter username and password and click login button")
     public void enterUsernameAndPasswordAndClickLoginButton(DataTable userPass) {

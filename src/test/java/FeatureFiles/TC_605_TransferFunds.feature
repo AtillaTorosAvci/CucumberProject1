@@ -6,12 +6,19 @@ Feature: Transfer Funds
     And   Clicks the "Register" button
     Then  The user should see a message confirming successful registration
 
-
+  @Payment @Regression
   Scenario: Money transfer between Accounts
-    And Navigate to TransferFunds
+    Given Navigate to TransferFunds
     Then Money transfer between Accounts
-    Then Success message should be displayed
-    And Navigate to Accounts Overview
-    When Accounts Overview
+    And Success message should be displayed
 
+  @Payment @Regression
+  Scenario: Money transfer between my accounts
+    Given Navigate to TransferFunds
+    Then Money transfer between Accounts
+    And Success message should be displayed
+    And Navigate to TransferFunds2
+    When Money transfer between Accounts2
+    Then Navigate to Accounts Overview
+    And Accounts Overview
 

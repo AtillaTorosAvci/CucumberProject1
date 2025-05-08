@@ -1,7 +1,6 @@
 Feature: Register functionality
 
   @SmokeTest @Regression
-
   Scenario: Create a user
 
     Given Navigate to ParaBank

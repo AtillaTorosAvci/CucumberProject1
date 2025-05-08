@@ -6,7 +6,10 @@ Feature: Update Contact functionality
     And   Clicks the "Register" button
     Then  The user should see a message confirming successful registration
 
+  @Contact @Accounts
   Scenario: Update Contact Info
     And Click on the Element
       | updateContactBtn |
       | updateProfileBtn |
+
+    And User should update successfully

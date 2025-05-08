@@ -25,7 +25,6 @@ public class TC_607_RequestLoanSteps extends GWD {
 
     @Given("The user clicks the Request Loan link on the ParaBank homepage")
     public void theUserClicksTheRequestLoanLinkOnTheParaBankHomepage() {
-        logger.info("TC_607 Başladı.");
         elements.myClick(elements.requestLoanBTN);
     }
 

@@ -11,14 +11,10 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 
-public class TC_604_OpenNewAccount {
+public class TC_604_OpenNewAccount extends GWD{
 
     Elements elements=new Elements();
     int rnd = (int)(Math.random() * 1000);
-
-    @Given("Navigate to Website")
-    public void navigateToWebsite()
-    {GWD.getDriver().get("https://parabank.parasoft.com/parabank/index.htm");}
 
 
     @When("Fill out the registration form with valid information")

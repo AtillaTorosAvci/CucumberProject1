@@ -19,9 +19,6 @@ public class Elements extends ParentPage{
     @FindBy(xpath = "//*[@value='Log In']")
     public WebElement loginbutton;
 
-    @FindBy(xpath = "//*[@id='rightPanel']/h1")
-    public WebElement loginErrorMessage;
-
     @FindBy(css="[href='transfer.htm']")
     public WebElement transferFunds;
 
@@ -46,9 +43,6 @@ public class Elements extends ParentPage{
     @FindBy(css="[id='accountTable']>:nth-child(2)>:nth-child(1)>:nth-child(1)>:nth-child(1)")
     public WebElement accountNumber;
 
-    @FindBy(css="[id='rightPanel'] table")
-    public WebElement transactionDetails;
-
     @FindBy(css="[href='findtrans.htm']")
     public WebElement findTransactions;
 
@@ -66,6 +60,9 @@ public class Elements extends ParentPage{
 
     @FindBy(css="[id='rightPanel']>:nth-child(2)>:nth-child(1)>:nth-child(5)>:nth-child(2)")
     public WebElement idAmount;
+
+    @FindBy(css="[id='findByAmount']")
+    public WebElement findByAmount;
 
     @FindBy(css = "[id='leftPanel'] :nth-child(7)")
     public WebElement requestLoanBTN;

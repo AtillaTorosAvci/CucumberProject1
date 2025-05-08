@@ -9,13 +9,15 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 
-public class TC_601_RegisterSteps {
+public class TC_601_RegisterSteps extends GWD{
 
     Elements el = new Elements();
     int rnd = (int)(Math.random() * 10000);
 
     @Given("Navigate to ParaBank")
-    public void navigateToParaBank() { GWD.getDriver().get("https://parabank.parasoft.com/parabank/index.htm");}
+    public void navigateToParaBank() {
+        logger.info("Test Başladı.");
+        GWD.getDriver().get("https://parabank.parasoft.com/parabank/index.htm");}
 
     @When("The user fills in the registration form with valid data")
     public void theUserFillsInTheRegistrationFormWithValidData() {

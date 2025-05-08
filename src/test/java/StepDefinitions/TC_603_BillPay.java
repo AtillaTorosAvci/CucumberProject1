@@ -11,7 +11,7 @@ import org.testng.Assert;
 
 import java.util.List;
 
-public class TC_603_BillPay {
+public class TC_603_BillPay extends GWD{
     Elements el = new Elements();
 
     @And("Click on the Element")

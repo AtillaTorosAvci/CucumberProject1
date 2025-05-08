@@ -1,11 +1,12 @@
 package StepDefinitions;
 
 import Pages.Elements;
+import Utilities.GWD;
 import io.cucumber.java.en.And;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 
-public class TC_606_ContactInfo {
+public class TC_606_ContactInfo extends GWD {
     Elements el = new Elements();
 
     @And("User should update successfully" )

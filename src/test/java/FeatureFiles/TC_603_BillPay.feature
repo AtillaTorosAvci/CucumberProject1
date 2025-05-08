@@ -6,7 +6,7 @@ Feature: Bill Pay Functionality
     And   Clicks the "Register" button
     Then  The user should see a message confirming successful registration
 
-
+  @Payment @SmokeTest @Regression
   Scenario: Pay electricity bill
     And Click on the Element
       | billPayBtn |
@@ -19,6 +19,7 @@ Feature: Bill Pay Functionality
 
     And User should pay successfully
 
+  @Payment @SmokeTest @Regression
   Scenario: Pay electricity bill negative
 
     And Click on the Element
