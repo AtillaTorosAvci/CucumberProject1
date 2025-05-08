@@ -1,7 +1,6 @@
 package StepDefinitions;
 
 import Pages.Elements;
-import Pages.ParentPage;
 import Utilities.GWD;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -10,9 +9,7 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 
-import java.util.Random;
-
-public class RegisterSteps {
+public class TC_601_RegisterSteps {
 
     Elements el = new Elements();
     int rnd = (int)(Math.random() * 10000);

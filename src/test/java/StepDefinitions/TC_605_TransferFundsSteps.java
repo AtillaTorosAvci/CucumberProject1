@@ -8,7 +8,7 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 
-public class _605_TransferFundsSteps {
+public class TC_605_TransferFundsSteps {
     Elements e = new Elements();
     ParentPage pp = new ParentPage();
 
@@ -43,5 +43,4 @@ public class _605_TransferFundsSteps {
         pp.myClick(e.fundTransferReceived);
         pp.myClick(e.transactionIDnumber);
     }
-
 }
