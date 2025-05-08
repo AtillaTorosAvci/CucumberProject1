@@ -55,10 +55,15 @@ public class TC_607_RequestLoanSteps extends GWD {
 
     @And("The user verifies the message")
     public void theUserVerifiesTheMessage(DataTable control) {
-        elements.wait.until(ExpectedConditions.visibilityOf(elements.loanRequestMSG));
         List<String> controlDatas = control.asList();
 
-        Assert.assertTrue(elements.loanRequestMSG.getText().toLowerCase().contains(controlDatas.get(0).toLowerCase()), "Loan Status Is Wrong");
+        if (elements.loanRequestMSG.getText().toLowerCase().contains("approved")) {
+            elements.wait.until(ExpectedConditions.visibilityOf(elements.loanRequestMSG));
+            Assert.assertTrue(elements.loanRequestMSG.getText().toLowerCase().contains(controlDatas.get(0).toLowerCase()), "Loan Status Is Wrong");
+        } else {
+            elements.wait.until(ExpectedConditions.visibilityOf(elements.loanRequestMSGDenied));
+            Assert.assertTrue(elements.loanRequestMSGDenied.getText().toLowerCase().contains(controlDatas.get(0).toLowerCase()), "Loan Status Is Wrong");
+        }
     }
 
     @And("The user clicks the link for the newly created loan account number")
@@ -68,7 +73,7 @@ public class TC_607_RequestLoanSteps extends GWD {
 
     @Then("The user verifies the following under the Account Details heading:")
     public void theUserVerifiesTheFollowingUnderTheAccountDetailsHeading(DataTable control) {
-        elements.wait.until(ExpectedConditions.textToBePresentInElement(elements.accountType,"LOAN"));
+        elements.wait.until(ExpectedConditions.textToBePresentInElement(elements.accountType, "LOAN"));
         List<String> controlDatas = control.asList();
 
         Assert.assertTrue(elements.accountType.getText().toLowerCase().contains(controlDatas.get(0).toLowerCase()), "Wrong Account Type");
@@ -78,7 +83,7 @@ public class TC_607_RequestLoanSteps extends GWD {
 
     @And("The user verifies the message No Transactions Found under the Account Activity heading")
     public void theUserVerifiesTheMessageNoTransactionsFoundUnderTheAccountActivityHeading() {
-        elements.wait.until(ExpectedConditions.textToBePresentInElement(elements.noTransactions,"No transactions found."));
+        elements.wait.until(ExpectedConditions.textToBePresentInElement(elements.noTransactions, "No transactions found."));
         Assert.assertTrue(elements.noTransactions.getText().toLowerCase().contains("no transactions found."), "Transactions is not empty");
     }
 

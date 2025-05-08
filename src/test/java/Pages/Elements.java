@@ -91,6 +91,9 @@ public class Elements extends ParentPage{
     @FindBy(id = "loanRequestApproved")
     public WebElement loanRequestMSG;
 
+    @FindBy(id = "loanRequestDenied")
+    public WebElement loanRequestMSGDenied;
+
     @FindBy(id = "newAccountId")
     public WebElement newAccountId;
 
