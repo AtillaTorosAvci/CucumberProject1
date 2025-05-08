@@ -5,7 +5,7 @@ import io.cucumber.java.en.And;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 
-public class US_606_ContactInfo {
+public class TC_606_ContactInfo {
     Elements el = new Elements();
 
     @And("User should update successfully" )

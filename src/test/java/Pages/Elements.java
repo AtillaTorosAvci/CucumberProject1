@@ -14,7 +14,7 @@ public class Elements extends ParentPage{
     public WebElement username;
 
     @FindBy(xpath = "//*[@name='password']")
-    public WebElement password;
+    public WebElement password2;
 
     @FindBy(xpath = "//*[@value='Log In']")
     public WebElement loginbutton;

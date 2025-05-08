@@ -8,10 +8,9 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.testng.Assert;
 
-import javax.swing.text.Element;
 import java.util.List;
 
-public class MyStepdefs {
+public class TC_602_LoginSteps {
     Elements elements = new Elements();
 
 
@@ -29,7 +28,7 @@ public class MyStepdefs {
         String password = listUserpass.get(0).get(1);
 
         elements.username.sendKeys(username);
-        elements.password.sendKeys(password);
+        elements.password2.sendKeys(password);
         elements.loginbutton.click();
 
     }
@@ -43,14 +42,14 @@ public class MyStepdefs {
         String password = listUserpass.get(0).get(1);
 
         elements.username.sendKeys(username);
-        elements.password.sendKeys(password);
+        elements.password2.sendKeys(password);
         elements.loginbutton.click();
     }
 
     @When("Enter username {string} and password {string} and click login button")
     public void enterUsernameAndPasswordAndClickLoginButton(String username, String password) {
         elements.username.sendKeys(username);
-        elements.password.sendKeys(password);
+        elements.password2.sendKeys(password);
         elements.loginbutton.click();
 
     }

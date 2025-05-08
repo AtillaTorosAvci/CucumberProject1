@@ -11,7 +11,7 @@ import org.testng.Assert;
 
 import java.util.List;
 
-public class US_603_BillPay {
+public class TC_603_BillPay {
     Elements el = new Elements();
 
     @And("Click on the Element")
