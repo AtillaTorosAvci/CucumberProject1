@@ -1,6 +1,8 @@
 package Utilities;
 
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -10,6 +12,8 @@ import java.time.Duration;
 import java.util.Locale;
 
 public class GWD {
+    public static Logger logger = LogManager.getLogger();
+
     private static ThreadLocal<WebDriver> threadDriver = new ThreadLocal<>();// thread e özel driver
     public static ThreadLocal<String> threadBrowserName = new ThreadLocal<>();
     //driver -> threadDriver.get() -> bulunduğum thread deki driver ı al
@@ -49,7 +53,7 @@ public class GWD {
     public static void quitDriver() {
         //test sonucu ekranı bir miktar beklesin diye
         try {
-            Thread.sleep(5000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
