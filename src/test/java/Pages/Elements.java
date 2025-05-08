@@ -94,9 +94,6 @@ public class Elements extends ParentPage{
     @FindBy(id = "noTransactions")
     public WebElement noTransactions;
 
-
-/// ///////////////////////////////////////////////
-
     @FindBy(linkText="Register")
     public WebElement register;
 
@@ -156,8 +153,7 @@ public class Elements extends ParentPage{
 
     @FindBy(xpath="//div[@id='openAccountResult']//h1")
     public WebElement CongMessage;
-
-    // Omer
+ 
     @FindBy(linkText = "Bill Pay")
     public WebElement billPayBtn;
 
@@ -179,8 +175,6 @@ public class Elements extends ParentPage{
     @FindBy(id="updateProfileResult")
     public WebElement updateProfileText;
 
-
-
     public WebElement getOmerElement(String strElement)
     {
         switch (strElement)
@@ -194,5 +188,6 @@ public class Elements extends ParentPage{
 
         return null;
     }
-    // Omer
+    
+
 }

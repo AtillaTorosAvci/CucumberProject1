@@ -1,7 +1,6 @@
 package StepDefinitions;
 
 import Pages.Elements;
-import Pages.ParentPage;
 import Utilities.GWD;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -10,12 +9,10 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 
-import java.util.Random;
-
-public class RegisterSteps {
+public class TC_601_RegisterSteps {
 
     Elements el = new Elements();
-    int rnd = (int)(Math.random() * 100);
+    int rnd = (int)(Math.random() * 10000);
 
     @Given("Navigate to ParaBank")
     public void navigateToParaBank() { GWD.getDriver().get("https://parabank.parasoft.com/parabank/index.htm");}
@@ -36,8 +33,6 @@ public class RegisterSteps {
         el.mySendKeys(el.userName, "john"+rnd);
         el.mySendKeys(el.password, "john12345");
         el.mySendKeys(el.confirmPassword, "john12345");
-
-
 
 
     }
