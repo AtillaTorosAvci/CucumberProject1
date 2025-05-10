@@ -14,6 +14,7 @@
 
 [![Java](https://img.shields.io/badge/Java-17-red)](https://java.com)
 [![Selenium](https://img.shields.io/badge/Selenium-4.0-green)](https://selenium.dev)
+[![Cucumber](https://img.shields.io/badge/Cucumber-7.0-brightgreen)](https://cucumber.io)
 
 ## 📌 Project Overview
 Virtual banking application for testing financial transactions including account management, money transfers, and loan processing.  
@@ -24,8 +25,8 @@ Virtual banking application for testing financial transactions including account
 - Functional UI test automation using Selenium/TestNG
 - Weekly sprint-based development
 - Skill development in:
-  - Technical: Java, Cucumber, Maven
-  - Soft Skills: Team collaboration, problem-solving
+- Technical: Java, Cucumber, Maven
+- Soft Skills: Team collaboration, problem-solving
 - Continuous improvement through iterative feedback
 
 ## 📋 Key User Stories
@@ -33,18 +34,17 @@ Virtual banking application for testing financial transactions including account
 |-------|----------------------------------|------------------------------------------|
 | US601 | User Registration                | New user account creation                |
 | US602 | User Login                       | Authentication system validation         |
-| US603 | Bill Payment                    | Utility payment functionality testing    |
-| US604 | Account Creation                | Checking/savings account setup           |
-| US605 | Inter-Account Transfers          | Internal money transfer verification     |
-| US606 | Contact Info Update             | User profile management testing          |
-| US607 | Loan Application                | Credit request process validation        |
+| US603 | Bill Payment                     | Utility payment functionality testing    |
+| US604 | Account Creation                 | Checking/savings account setup           |
+| US605 | Transfers Funds                  | Internal money transfer verification     |
+| US606 | Contact Info Update              | User profile management testing          |
+| US607 | Loan Application                 | Credit request process validation        |
 
 ## 🛠️ Tech Stack
 - **Test Automation**: Java, Selenium, TestNG, Cucumber
 - **CI/CD**: Maven
 - **Test Management**: Jira
 - **Version Control**: GitHub
-
 
 ## 🛠️ Technologies Used
 
@@ -86,41 +86,41 @@ Virtual banking application for testing financial transactions including account
 
 ## 📁 Evidence Files (Manual Testing)
 
-### US_301 — Promo Code - Invalid Entry  
-[View GIF](docs/US301_EJunkie_PromoCodeNegative.gif)  
-<img src="docs/US301_EJunkie_PromoCodeNegative.gif" width="400"/>
+### US_601 — User Registration
+[View GIF](US_601_Reg.gif)  
+<img src="US_601_Reg.gif" width="400"/>
 
-### US_302 — Payment Failure with Invalid Card  
-[View GIF](docs/US302_EJunkie_PayNegative.gif)  
-<img src="docs/US302_EJunkie_PayNegative.gif" width="400"/>
+### US_602 — User Login
+[View GIF](US_602_Login.gif)  
+<img src="US_602_Login.gif" width="400"/>
 
-### US_303 — Failed Payment Scenario  
-[View GIF](docs/US303_EJunkie_PayNegative.gif)  
-<img src="docs/US303_EJunkie_PayNegative.gif" width="400"/>
+### US_602 — User Login(negative)
+[View GIF](US_602_Login_Neg.gif)  
+<img src="US_602_Login_Neg.gif" width="400"/>
 
-### US_304 — Successful Payment  
-[View GIF](docs/US304_EJunkie_Pay.gif)  
-<img src="docs/US304_EJunkie_Pay.gif" width="400"/>
+### US_603 — Bill Payment 
+[View GIF](US_603_BillPayment.gif)  
+<img src="US_603_BillPayment.gif" width="400"/>
 
-### US_305 — Download Purchased E-Book  
-[View GIF](docs/US305_EJunkie_Download.gif)  
-<img src="docs/US305_EJunkie_Download.gif" width="400"/>
+### US_604 — Account Creation
+[View GIF](US_604_NewAccount.gif)  
+<img src="US_604_NewAccount.gif" width="400"/>
 
-### US_306 — Contact Form Submission  
-[View GIF](docs/US306_EJunkie_ContactUs.gif)  
-<img src="docs/US306_EJunkie_ContactUs.gif" width="400"/>
+### US_604 — Account Creation2
+[View GIF](US_604_NewAccount2.gif)  
+<img src="US_604_NewAccount2.gif" width="400"/>
 
-### US_307 — Site Navigation and Logo Access  
-[View GIF](docs/US307_EJunkie_Logo.gif)  
-<img src="docs/US307_EJunkie_Logo.gif" width="400"/>
+### US_605 — Transfers Funds
+[View GIF](US_605_TransferFunds.gif)  
+<img src="US_605_TransferFunds.gif" width="400"/>
 
-### US_308 — Info Video on Homepage  
-[View GIF](docs/US308_EJunkie_Youtube.gif)  
-<img src="docs/US308_EJunkie_Youtube.gif" width="400"/>
+### US_606 — Contact Info Update 
+[View GIF](US_607_UpdateContact.gif)  
+<img src="US_607_UpdateContact.gif" width="400"/>
 
-### US_309 — Download Details After Purchase  
-[View GIF](docs/US309_EJunkie_DownloadDetails.gif)  
-<img src="docs/US309_EJunkie_DownloadDetails.gif" width="400"/>
+### US_607 — Loan Application  
+[View GIF](US_608_Loan_Credit.gif)  
+<img src="US_608_Loan_Credit.gif" width="400"/>
 
 
 ---
@@ -129,7 +129,6 @@ Virtual banking application for testing financial transactions including account
 
 - **RocketChat**
 - **WhatsApp**
-
 
 ---
 
