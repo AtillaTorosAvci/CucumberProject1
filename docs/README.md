@@ -75,7 +75,7 @@ Virtual banking application for testing financial transactions including account
 | Name                                                       | Role               |
 |------------------------------------------------------------|--------------------|
 | [Atilla Toros Avcı](https://github.com/AtillaTorosAvci)    | GitHub Manager / QA    |
-| [Ömer Boncuk](https://github.com/palanque92)               | Jira Administrator / QA |
+| [Ömer Boncuk](https://github.com/OmerBoncuk)               | Jira Administrator / QA |
 | [Diyar Ölmez](https://github.com/diyarolmezz)              | QA          |
 | [Barış Saydam](https://github.com/BarisSaydam)             | QA             |
 | [Erdem Özkan](https://github.com/ErdemOzkann)              | QA             |
