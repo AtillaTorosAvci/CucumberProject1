@@ -76,10 +76,10 @@ Virtual banking application for testing financial transactions including account
 |------------------------------------------------------------|--------------------|
 | [Atilla Toros Avcı](https://github.com/AtillaTorosAvci)    | GitHub Manager     |
 | [Ömer Boncuk](https://github.com/palanque92)               | Jira Administrator |
-| [Diyar Ölmez](https://github.com/diyarolmezz)              | Tester             |
-| [Barış Saydam](https://github.com/BarisSaydam)             | Tester             |
-| [Erdem Özkan](https://github.com/ErdemOzkann)              | Tester             |
-| [Gamze Batmaz](https://github.com/GAMZE3845)               | Tester             |
+| [Diyar Ölmez](https://github.com/diyarolmezz)              | QA          |
+| [Barış Saydam](https://github.com/BarisSaydam)             | QA             |
+| [Erdem Özkan](https://github.com/ErdemOzkann)              | QA             |
+| [Gamze Batmaz](https://github.com/GAMZE3845)               | QA             |
 
 
 ---
